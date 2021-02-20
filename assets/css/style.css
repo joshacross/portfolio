@@ -1,7 +1,8 @@
 :root {
-    --primary-color: #606060;
-    --secondary-color: #0a0826;
+    --primary-color: #ffffff;
+    --secondary-color: #1a1a1a;
     --tertiary-color: #00ffc9;
+    --button-color: #606060;
     --dm: font-family: 'DM Serif Display', serif;
 }
 
@@ -13,25 +14,28 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    margin: 0 auto;
     color: var(--primary-color);
+    width: 1600px;
+    background-color: var(--secondary-color);
+    margin: 0 400px;
+}
+
+.twelve {
+    width: 1200px;
 }
 
 /*Logo Style*/
 header {
-    padding: 10px 15px 20px 25px;
-    background-color: #ffffff;
+    padding: 10px 0 20px 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 1200px;
 }
 
 header h1 {
     font-weight: bold;
-    font-size: 26px;
-    color: #000000;
     margin: 0;
+    font-size: 2vw;
 }
 
 .portfolio-tag {
@@ -41,7 +45,7 @@ header h1 {
 header a {
     text-decoration: none;
     color: var(--primary-color);
-    width: 1200px;
+    font-size: 1.55vw;
 }
 
 header nav {
@@ -66,31 +70,48 @@ header nav ul li {
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1vw;
 }
 
 header nav ul li a:hover {
-    color: var(--secondary-color);
-    text-shadow: 0 0 10px rgba(0, 255, 201, 0.5);
+    text-decoration: underline var(--primary-color);
+    transition-timing-function: ease;
 }
 
 .contact-div {
-    color: var(--tertiary-color);
-    background-color: var(--secondary-color);
+    background-color: var(--button-color);
     border-radius: 15px;
-    text-shadow: none;
+    padding: 5px 0;
 }
 
 .contact-div:hover {
-    border-shadow: 0 0 10px rgba(0, 255, 201, 0.5);
+    box-shadow: 0 10px 10px rgba(0, 255, 255, 0.5);
 }
 
 /*intro Styles*/
 
+.intro {
+    width: 350px;
+}
+
+.intro h1 {
+    font-family: font-family: 'DM Serif Display', serif;
+}
 /*intro Styles End*/
 
 /*Hero Styles*/
-
+.hero {
+    background-image: url("../images/hero.gif");
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-attachment: fixed;
+    background-position: 80%;
+}
 /*Hero Styles End*/
 
 /*About Styles*/
@@ -98,15 +119,63 @@ header nav ul li a:hover {
 /*About Styles End*/
 
 /*Skills Styles*/
-
+.skills {
+    display: flex;
+    justify-content: space-around;
+}
 /*Skills Styles End*/
 
 /*Projects Styles*/
+.project {
+    display: flex;
+    margin: 20px 0 40px 0;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+}
 
+.project-text {
+    margin-right: 5%;
+    font-size: 1.15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project a {
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    border-radius: 15px;
+    text-decoration: none;
+    margin: 10px 10px 0 0;
+    padding: 5px 10px;
+}
+
+.project img {
+    height: 100%;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
 /*Project Styles End*/
 
 /*Break Quote Styles*/
-
+.break-quote {
+    background-image: url("../images/300x300.png");
+    background-color: white;
+    background-size: cover;
+    height: 300px;
+    width: 1600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+}
 /*Break Quote Styles End*/
 
 /*Contact Styles*/
@@ -120,6 +189,8 @@ header nav ul li a:hover {
 /*Footer Styles*/
 
 /*Footer Styles End*/
+
+/*Media Queries - 
 
 /*Media Queries - 780px*/
 
