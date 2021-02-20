@@ -1,0 +1,88 @@
+:root {
+    --primary-color: #606060;
+    --secondary-color: #0a0826;
+    --tertiary-color: #00ffc9;
+    --dm: font-family: 'DM Serif Display', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    color: var(--primary-color);
+}
+
+/*Header Styles*/
+header {
+    padding: 10px 15px 20px 25px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1200px;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 26px;
+    color: #000000;
+    margin: 0;
+}
+
+.portfolio-tag {
+    color: var(--primary-color);
+    font-weight: lighter;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--primary-color);
+    width: 1200px;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+
+header nav ul li a:hover {
+    color: var(--secondary-color);
+    text-shadow: 0 0 10px rgba(0, 255, 201, 0.5);
+}
+
+.contact-div {
+    color: var(--tertiary-color);
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+.contact-div:hover {
+    border-shadow: 0 0 10px rgba(0, 255, 201, 0.5);
+}
+
