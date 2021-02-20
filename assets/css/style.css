@@ -17,7 +17,7 @@ body {
     color: var(--primary-color);
 }
 
-/*Header Styles*/
+/*Logo Style*/
 header {
     padding: 10px 15px 20px 25px;
     background-color: #ffffff;
@@ -38,7 +38,6 @@ header h1 {
     color: var(--primary-color);
     font-weight: lighter;
 }
-
 header a {
     text-decoration: none;
     color: var(--primary-color);
@@ -52,7 +51,7 @@ header nav {
 header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     list-style: none;
 }
@@ -67,7 +66,7 @@ header nav ul li {
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 1vw;
 }
 
 header nav ul li a:hover {
@@ -85,4 +84,52 @@ header nav ul li a:hover {
 .contact-div:hover {
     border-shadow: 0 0 10px rgba(0, 255, 201, 0.5);
 }
+
+/*intro Styles*/
+
+/*intro Styles End*/
+
+/*Hero Styles*/
+
+/*Hero Styles End*/
+
+/*About Styles*/
+
+/*About Styles End*/
+
+/*Skills Styles*/
+
+/*Skills Styles End*/
+
+/*Projects Styles*/
+
+/*Project Styles End*/
+
+/*Break Quote Styles*/
+
+/*Break Quote Styles End*/
+
+/*Contact Styles*/
+
+/*Contact Styles End*/
+
+/*Social Section Styles*/
+
+/*Social Section Styles End*/
+
+/*Footer Styles*/
+
+/*Footer Styles End*/
+
+/*Media Queries - 780px*/
+
+
+/*Media Queries - 780px - End*/
+
+/*Media Queries - 500px*/
+
+/*Media Queries - 500px - End*/
+
+
+
 
