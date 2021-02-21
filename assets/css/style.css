@@ -16,17 +16,23 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: var(--primary-color);
-    width: 1600px;
     background-color: var(--secondary-color);
     margin: 0 auto;
+    width: 1600px;
 }
 
 section {
     margin: 60px 0;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 .twelve {
     width: 1200px;
+
 }
 
 /*Logo Style*/

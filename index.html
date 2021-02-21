@@ -1,46 +1,75 @@
-<!DOCTYPE html
-PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
-  <head profile="http://www.w3.org/2005/10/profile">
-    <link rel="icon" 
-          type="image/png" 
-          href="*/assets/images/JC-favicon.png>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="title" content="Joshua Cross Portfolio">
-    <meta name="description" content="Joshua Cross is an aspiring tech enthusiast, digital marketer, and content producer in Nashville, TN. Portolio shows responsive web-design and advanced-css skills.">
-    <meta name="keywords" content="portfolio, responsive, advanced-css, marketing">
-    <meta name="author" content="Joshua Cross">
-    <meta name="viewport" content="width=device=width, initial-scale=1.0" />
+    <meta 
+      name="title" 
+      content="Joshua Cross Portfolio" 
+    />
+    <meta 
+      name="description" 
+      content="Joshua Cross is an aspiring tech enthusiast, digital marketer, and content producer in Nashville, TN. Portolio shows responsive web-design and advanced-css skills." 
+    />
+    <meta 
+      name="keywords" 
+      content="portfolio, responsive, advanced-css, marketing" 
+    />
+    <meta 
+      name="author" 
+      content="Joshua Cross"
+    />
+    <meta 
+      name="viewport" 
+      content="width=device=width, initial-scale=1.0" 
+    />
     <title>Joshua Cross Portfolio</title>
+<!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+<!--Stylesheet-->
+    <link 
+      rel="stylesheet" 
+      href="./assets/css/style.css" 
+    />
   </head>
 </html>
 <body>
 <!--Header Section-->
-  <header>
+  <header class="twelve">
     <h1 class="logo">
-      Joshua Cross <span class="portfolio-tag">Portfolio</span>
+      Joshua Cross <span class="portfolio-tag">portfolio</span>
     </h1>
 <!--Navigation-->
     <nav>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="projects">Projects</a></li>
-        <li class="contact-button"><a href="#contact">Say Hi!</a></li>
+        <div class="nav-links">
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="projects">Projects</a>
+          </li>
+        </div>
+        <div class="contact-div">
+          <li class="contact-button">
+            <a href="#contact">Say Hi!</a>
+          </li>
+        </div>
       </ul>
     </nav>
   </header>
-<!--Intro Section-->
-  <section class="intro">
-    <p>Welcome!</p>
-    <h1>I elevate user experiences using telekinesis</h1>
-  </section>
-<!--Hero Section-->
-    <section class="hero"></section>
 <!--Main Content Section-->
   <main>
+  <!--Intro Section-->
+    <section class="intro twelve">
+      <p>Welcome!</p>
+      <h1>I elevate user experiences using telekinesis</h1>
+    </section>
+  <!--Hero Section-->
+    <section class="hero">
+    </section>
   <!--About Section-->
-    <section id="about"></section>
+    <section id="about" class="twelve">
       <article>
         <h2>About</h2>
         <p>
@@ -55,11 +84,11 @@ PUBLIC "-//W3C//DTD HTML 4.01//EN"
           He received a Bachelors of Business Administration from Belmont University’s Massey School of Business, and won awards 
           for entrepreneurship and academic excellence.
         </p>
-        <p><a href="*/about">Learn More...</a></p>
+        <p><a href="./about">Learn More...</a></p>
       </article>
     </section>
   <!--Skills Outline-->
-    <section class="skills">
+    <section class="skills twelve">
       <div class="skills-column1">
         <ul>
           <li>Marketing Strategy</li>
@@ -83,102 +112,117 @@ PUBLIC "-//W3C//DTD HTML 4.01//EN"
         </ul>
       </div>
     </section>
-<!--Projects Section-->
-    <section id="projects">
+  <!--Projects Section-->
+    <section id="projects" class="twelve">
       <h2>Selected Projects</h2>
         <article class="project">
           <div class="project-text">
-            <h3>Horiseon Social Solutions, Inc.</h3>
-            <p>
-                The following website is an on-the-job ticket that required me, as a website developer, 
-                to refract existing code, modifying and consolidating the existing HTML and CSS language and structure, 
-                to optimize SEO and establish accessibility to the website.
+            <div class="project-info">
+              <h3>Horiseon Social Solutions, Inc.</h3>
+              <p>
+                  The following website is an on-the-job ticket that required me, as a website developer, 
+                  to refract existing code, modifying and consolidating the existing HTML and CSS language and structure, 
+                  to optimize SEO and establish accessibility to the website.
               </p>
-            <a href="https://joshacross.github.io/horiseon-social-solutions-beta/">
-              Visit Website
-            </a>
-            <br>
-            <a href="https://github.com/joshacross/horiseon-social-solutions-beta">
-              View Code
-            </a>
+            </div>
+            <div class="project-links">
+              <a href="https://joshacross.github.io/horiseon-social-solutions-beta/">
+                Visit Website
+              </a>
+              <br>
+              <a href="https://github.com/joshacross/horiseon-social-solutions-beta">
+                View Code
+              </a>
+            </div>
           </div>
           <div class="project-image">
-            <a href="https://joshacross.github.io/horiseon-social-solutions-beta/">
-              <img 
+            <img 
               src="./assets/images/horiseon-preview.png" 
               alt="website preview of Horiseon Social Solutions and corresponding code"
-              />
-          </a>
+            />
         </div>
       </article>
-      <article class="project">
+      <article class="project reverse">
         <div class="project-text">
-          <h3>Run Buddy, Inc.</h3>
-          <p>
-            A fully responsive, HTML & CSS mock-up that was built by using a git repository to commit and branch 
-            incremental changes through the development process. The code in this design is organized to improve 
-            long-term sustainability and assessibiilty as more content is added, and uses advanced CSS (i.e Psuedoclass), 
-            media-queries, and flexbox to create resposive designs on various screen sizes.
+          <div class="project-info">
+            <h3>Run Buddy, Inc.</h3>
+            <p>
+              A fully responsive, HTML & CSS mock-up that was built by using a git repository to commit and branch 
+              incremental changes through the development process. The code in this design is organized to improve 
+              long-term sustainability and assessibiilty as more content is added, and uses advanced CSS (i.e Psuedoclass), 
+              media-queries, and flexbox to create resposive designs on various screen sizes.
             </p>
+        </div>
+        <div class="project-links">
           <a href="https://joshacross.github.io/run-buddy/">
             Visit Website
           </a>
           <br>
+          
           <a href="https://github.com/joshacross/run-buddy">
             View Code
           </a>
         </div>
-        </div class="project-image">
-          <a href="https://joshacross.github.io/run-buddy/">
-            <img 
+      </div>
+        <div class="project-image">
+          <img 
             src="./assets/images/runbuddy-preview.png" 
             alt="website preview of Run Buddy's website"
-            />
-          </a>
+          />
         </div>
       </article>
     </section>
-<!--Break Quote Section-->
+  <!--Break Quote Section-->
     <section class="break-quote">
-      <h1>
-        "The Only Constant In Life Is Change"
-      </h1>
-      <p>
-        -Heraclitus
-      </p>
-    </section>
-<!--Contact Section-->
-    <section class="contact">
-      <div class="contact-form">
-        <h3>Let's Work Together!</h3>
+        <h1>
+          "The Only Constant In Life Is Change"
+        </h1>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
-          consequatur blanditiis id maiores eveniet quis ut eum pariatur, nobis
-          explicabo ab! Eligendi ad blanditiis vero doloremque soluta veritatis
-          cupiditate architecto.
+          -Heraclitus
         </p>
+    </section>
+  <!--Contact Section-->
+    <section id="contact" class="contact twelve">
+      <div class="contact-form">
+        <div class="form-header">
+          <h3>Let's Work Together!</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
+            consequatur blanditiis id maiores eveniet quis ut eum pariatur, nobis
+            explicabo ab! Eligendi ad blanditiis vero doloremque soluta veritatis
+            cupiditate architecto.
+          </p>
+        </div>
         <form action="#">
-          <div class="name">
-            <label for="contact-name">NAME</label>
-            <input type="text" id="contact-name" placeholder="" required />
+          <div class="form-row1">
+            <div class="name">
+              <label for="contact-name">NAME</label>
+              <br>
+              <input type="text" id="contact-name" placeholder="" required />
+            </div>
+            <div class="email">
+              <label for="email"> EMAIL</label>
+              <br>
+              <input type="email" id="contact-email" placeholder="" required />
+            </div>
           </div>
-          <div class="email">
-            <label for="email"> EMAIL</label>
-            <input type="email" id="contact-email" placeholder="" required />
+          <div class="form-row2">
+            <label for="message">MESSAGE</label>
+            <br>
+            <input
+              type="textarea"
+              id="message-area"
+              placeholder="imagination is more important than knowledge ~ Einstein"
+              required
+            />
           </div>
-          <label for="message">MESSAGE</label>
-          <input
-            type="textarea"
-            id="message-area"
-            placeholder="imagination is more important than knowledge ~ Einstein"
-            required
-          />
+          <br>
           <button>submit</button>
         </form>
       </div>
     </section>
-<!--Social Connect Section-->
-    <section class="social">
+  <!--Social Connect Section-->
+    <section class="social twelve">
       <h2>
         Follow me on social!
       </h2>
