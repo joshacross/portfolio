@@ -138,34 +138,84 @@ header nav ul li a:hover {
 /*Hero Styles End*/
 
 /*About Styles*/
+.about-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Profile Card Styles*/
+.about-column1 {
+    width: 35%;
+    margin: 7% 0;
+    background-image: url("../assets/images/iphonex.icns");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    padding: 2%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-column1 img {
+    box-shadow: 0 0 15px rgba(0, 0, 0, .25);
+    border-radius: 50%;
+    width: 80%;
+}
+
+.about-column1 a {
+    border: solid 1px var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 10px;
+    letter-spacing: 3px;
+    width: 80%;
+    text-decoration: none;
+    padding: 3% 0;
+}
+
+.about-column1 a:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.about-column1 h4 {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.about-column1 h5 {
+    font-weight:lighter;
+}
+
+.about-column2 {
+    width: 60%;
+}
+
 .about {
     margin-top: 5%;
 }
 
-.about, .skills {
-    width: 50%;
-}
-
-.about a {
+.about-column2 a {
     color: var(--primary-color);
     text-decoration: none;
     font-weight: bold;
 }
 
-.about a:hover {
+.about-column2 a:hover {
     text-decoration: underline;
 }
-
-
-/*About Styles End*/
 
 /*Skills Styles*/
 .skills {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 10%;
+    margin: 7% 0 10% 0;
 }
 /*Skills Styles End*/
+
+/*About Styles End*/
 
 /*Projects Styles*/
 .project {
