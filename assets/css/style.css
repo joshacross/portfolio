@@ -262,35 +262,37 @@ button:active {
 .social {
     text-align: center;
     text-size: 2vw;
+    margin: 5% 5% 10% 5%;
+}
+
+.social h2 {
+    font-family: 'Poppins', sans-serif !important;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    font-size: 1.5vw;
 }
 
 .social img {
-    width: 5%;
-    color: white;
-    margin: 5%;
+    width: 3%;
+    margin: .5% 5%;
+    padding-top: 5%;
 }
 
-.schedule a {
-    background-color: var(--primary-color);
+.social a {
     text-decoration: none;
-    color: var(--secondary-color);
-    letter-spacing: 3px;
-    padding: 1% 5%;
-    border-radius: 15px;
-    display: block;
-    margin: 3% 30%;
+}
+
+.white {
+    filter: invert(100%);
 }
 
 /*Social Section Styles End*/
 
 /*Footer Styles*/
 footer {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
     margin: 20px;
+    text-align: center;
+    font-weight: lighter;
 }
 
 footer a {
@@ -299,22 +301,27 @@ footer a {
 }
 
 footer nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
     list-style: none;
 }
 
 footer nav ul li {
     display: inline;
-    margin: 0 5%;
+    padding: 1%;
     font-weight: lighter;
     font-size: 1vw;
 }
 
+footer nav ul a:hover {
+    text-decoration: underline;
+}
+
 footer div ul li {
     display: inline;
+}
+
+footer div ul a:hover {
+    font-weight: bold;
 }
 /*Footer Styles End*/
 
