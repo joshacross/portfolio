@@ -124,11 +124,10 @@ header nav ul li a:hover {
 
 /*Hero Styles*/
 .hero {
-    background-image: url("../images/JoshCross.jpg");
+    background-image: url("../images/hero.gif");
     background-color: white;
     background-size: cover;
-    background-position-x: center;
-    background-position-y: -700px;
+    background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     margin: 0 -20%;
@@ -213,7 +212,7 @@ header nav ul li a:hover {
 
 /*Break Quote Styles*/
 .break-quote {
-    background-image: url("../images/background-retina-macbook-beautiful-backgrounds-images.jpg");
+    background-image: url("../images/JoshCross.jpg");
     background-color: white;
     background-size: cover;
     height: 600px;
