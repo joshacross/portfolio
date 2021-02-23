@@ -309,7 +309,7 @@ header nav ul li a:hover {
     border-radius: 15px;
     padding: 1% 5%;
     color: var(--secondary-color);
-    margin: 5% 10% 0 10%;
+    margin: 5% 15% 0 15%;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -376,11 +376,14 @@ button:active {
 
 .social {
     text-align: center;
-    margin: 5% 5% 10% 5%;
+    margin: 5% auto 20% auto;
+    margin-bottom: solid 1px var(--button-color);
+    padding-bottom: 5%;
 }
 
 .social h2 {
     font-family: 'Poppins', sans-serif !important;
+    font-size: 3vw;
     letter-spacing: 3px;
     font-weight: lighter;
 }
@@ -564,6 +567,11 @@ footer div ul a:hover {
         font-size: 20px;
     }
 
+    .contact-form {
+        width: 90%;
+        margin: 0 auto !important;
+    }
+
     .project-links {
         align-items: center;
         margin-top: 20px;
@@ -587,6 +595,10 @@ footer div ul a:hover {
 
     form input {
         border-radius: 10px;
+    }
+
+    .social h2 {
+        font-size: 20px;
     }
 
     .social img {
