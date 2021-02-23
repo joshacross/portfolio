@@ -103,6 +103,11 @@ header nav ul li a:hover {
     padding: 5px 15px;
 }
 
+.hamburger {
+    position: absolute;
+    right: -9999px;
+}
+
 .contact-div a:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -127,11 +132,10 @@ header nav ul li a:hover {
 
 /*Hero Styles*/
 .hero {
-    width: 120vw;
-    height: 100vh;
-    background: url("../images/hero.gif") no-repeat center center;
+    height: 75vh;
+    background: url("../images/hello-hero.gif") no-repeat center center;
     background-color: white;
-    background-attachment:initial;
+    background-attachment:fixed;
     background-size: cover;
     margin: 0 -20%;
     padding: 0;
@@ -443,26 +447,97 @@ footer div ul a:hover {
 /*Media Queries - 900px*/
 @media screen and (max-width: 900px) {
     header {
-        flex-direction: column;
+        font-size: 15px;
+        margin: 5%;
+        display: block;
+        text-align: center;
+    }
+    
+    header nav ul {
+        display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 2.1vw;
+        list-style: none;
+    }
+
+    header nav ul li {
+        font-size: 10px;
     }
 
     .intro {
-        font-size: 100%;
-        width: 50%;
-        margin: 10% auto 5% auto;
-        line-height: 1.5;
-        text-align: center;
+        position: absolute;
+        margin: 0 auto;
+        top: -999px;
+    }
+
+    .hero {
+        backround-position: 400px;
     }
 }
 
 
 /*Media Queries - 900px - End*/
 @media screen and (max-width: 500px) {
+    body {
+        margin: 0 auto;
+        width: 100%;
+    }
 
-}
+    header {
+        font-size: 15px;
+        margin: 5%;
+        display: block;
+        text-align: center;
+    }
+    
+    header h1 {
+        font-weight: bold;
+        margin: 0;
+    }
+    
+    .portfolio-tag {
+        color: var(--primary-color);
+        font-weight: lighter;
+    }
+    
+    header a {
+        text-decoration: none;
+        color: var(--primary-color);
+    }
+    
+    header nav a {
+        text-decoration: none;
+        color: var(--primary-color);
+    }
+    
+    header nav {
+        margin: 7px 0;
+    }
+    
+    header nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+    
+    header nav ul li {
+        display: inline;
+        margin: 0 10px;
+        font-weight: lighter;
+        font-size: 20px;
+    }
+    
+    header nav ul li a {
+        padding: 10px 15px;
+        font-weight: lighter;
+    }
+    
+    header nav ul li a:hover {
+        text-decoration: underline var(--primary-color);
+        transition-timing-function: ease;
+    }
+    
 /*Media Queries - 500px*/
 
 /*Media Queries - 500px - End*/
