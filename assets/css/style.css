@@ -4,8 +4,6 @@
     --tertiary-color: #00ffc9;
     --button-color: #606060;
     --form-color: #e9e9e9;
-    --dm: font-family: 'DM Serif Display', serif;
-    --p: font-family: 'Poppins', sans-serif;
 }
 
 * {
@@ -16,7 +14,6 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    font-size: 1vw;
     line-height: 1.75;
     color: var(--primary-color);
     background-color: var(--secondary-color);
@@ -32,6 +29,10 @@ section {
     margin: 2% 0;
 }
 
+.twelve {
+    width: 100%;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -40,7 +41,8 @@ main {
 
 /*Logo Style*/
 header {
-    padding: 10px 0 20px 0;
+    font-size: 1.1vw;
+    margin: 5% 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -50,7 +52,6 @@ header {
 header h1 {
     font-weight: bold;
     margin: 0;
-    font-size: 2vw;
 }
 
 .portfolio-tag {
@@ -66,7 +67,6 @@ header a {
 header nav a {
     text-decoration: none;
     color: var(--primary-color);
-    font-size: 1.55vw;
 }
 
 header nav {
@@ -111,8 +111,8 @@ header nav ul li a:hover {
 /*intro Styles*/
 
 .intro {
+    font-size: 1.55vw;
     width: 45%;
-    font-size: 1.5vw;
     margin-top: 10%;
     margin-bottom: 5%;
     line-height: 1.5;
@@ -127,14 +127,14 @@ header nav ul li a:hover {
 
 /*Hero Styles*/
 .hero {
-    background-image: url("../images/hero.gif");
+    width: 120vw;
+    height: 100vh;
+    background: url("../images/hero.gif") no-repeat center center;
     background-color: white;
+    background-attachment:initial;
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
     margin: 0 -20%;
-    height: 600px;
+    padding: 0;
 }
 /*Hero Styles End*/
 
@@ -142,6 +142,7 @@ header nav ul li a:hover {
 .about-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /*Profile Card Styles*/
@@ -329,13 +330,11 @@ header nav ul li a:hover {
     width: 100%;
     padding: 5%;
     border: none;
-    text-size: 1vw;
 }
 
 .form-row2 input {
     width: 100%;
     height: 100px;
-    text-size: .25vw;
     padding: 1%;
     border: none;
 }
@@ -348,7 +347,6 @@ header nav ul li a:hover {
 
 button {
     padding: 10px 30px;
-    text-size: 2vw;
     border: solid 1px var(--secondary-color);
     letter-spacing: 5px;
     border-radius: 10px;
@@ -376,7 +374,6 @@ button:active {
 
 .social {
     text-align: center;
-    text-size: 2vw;
     margin: 5% 5% 10% 5%;
 }
 
@@ -384,7 +381,6 @@ button:active {
     font-family: 'Poppins', sans-serif !important;
     letter-spacing: 3px;
     font-weight: lighter;
-    font-size: 1.5vw;
 }
 
 .social img {
@@ -426,7 +422,6 @@ footer nav ul li {
     display: inline;
     padding: 1%;
     font-weight: lighter;
-    font-size: 1vw;
 }
 
 footer nav ul a:hover {
@@ -445,11 +440,28 @@ footer div ul a:hover {
 
 /*Media Queries - 
 
-/*Media Queries - 780px*/
+/*Media Queries - 900px*/
+@media screen and (max-width: 900px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        font-size: 3.1vw;
+    }
+
+    .intro {
+        font-size: 100%;
+        width: 50%;
+        margin: 10% auto 5% auto;
+        line-height: 1.5;
+        text-align: center;
+    }
+}
 
 
-/*Media Queries - 780px - End*/
+/*Media Queries - 900px - End*/
+@media screen and (max-width: 500px) {
 
+}
 /*Media Queries - 500px*/
 
 /*Media Queries - 500px - End*/
