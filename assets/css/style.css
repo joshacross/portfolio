@@ -376,13 +376,7 @@ button:active {
 
 .social {
     text-align: center;
-<<<<<<< HEAD
-    margin: 5% auto 20% auto;
-    margin-bottom: solid 1px var(--button-color);
-    padding-bottom: 5%;
-=======
     margin: 5% auto 10% auto;
->>>>>>> develop
 }
 
 .social h2 {
