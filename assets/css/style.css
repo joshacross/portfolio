@@ -395,6 +395,11 @@ button:active {
     filter: invert(100%);
 }
 
+.social img:hover {
+    width: 5%;
+    transition: width .5s;
+}
+
 
 
 /*Social Section Styles End*/
