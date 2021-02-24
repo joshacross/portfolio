@@ -103,11 +103,6 @@ header nav ul li a:hover {
     padding: 5px 15px;
 }
 
-.hamburger {
-    position: absolute;
-    right: -9999px;
-}
-
 .contact-div a:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -132,10 +127,11 @@ header nav ul li a:hover {
 
 /*Hero Styles*/
 .hero {
-    background: url("../images/hello-hero.gif") no-repeat center center;
+    background: url("../images/hello-hero.gif");
     background-color: white;
-    background-attachment:fixed;
-    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position-y: -5vh;
     margin: 0 -20%;
     padding: 0;
 }
@@ -472,6 +468,10 @@ footer div ul a:hover {
         top: -999px;
     }
 
+    .hero {
+        background-position-y: -10vh;
+    }
+
     .project-column1 {
         display: inline-block;
         width: 45%;
@@ -502,6 +502,16 @@ footer div ul a:hover {
 
 /*Media Queries - 900px - End*/
 @media screen and (max-width: 600px) {
+    .hero {
+        background: url("../images/hello-hero.gif");
+        background-color: white;
+        background-attachment: fixed;
+        background-size: 150%;
+        background-position: center -7vh;
+        background-repeat: no-repeat;
+        margin: 0 -20%;
+        padding: 0;
+    }
     .about-container {
         display: block;
     }
@@ -576,6 +586,7 @@ footer div ul a:hover {
 
     .break-quote {
         font-size: 12px;
+        background-position-x: 0vh;
     }
 
     .form-row1 {
