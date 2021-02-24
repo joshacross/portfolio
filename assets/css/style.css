@@ -134,6 +134,8 @@ header nav ul li a:hover {
     background-position-y: -5vh;
     margin: 0 -20%;
     padding: 0;
+    text-align: center;
+    letter-spacing: 3px;
 }
 /*Hero Styles End*/
 
@@ -384,6 +386,7 @@ button:active {
     width: 3%;
     margin: .5% 5%;
     padding-top: 5%;
+    transition: width .2s;
 }
 
 .social a {
@@ -392,6 +395,11 @@ button:active {
 
 .white {
     filter: invert(100%);
+}
+
+.social img:hover {
+    width: 5%;
+    transition: width .2s;
 }
 
 
@@ -471,6 +479,10 @@ footer div ul a:hover {
         background-position-y: -10vh;
     }
 
+    .secondary-hero {
+        background-position-y: 20vh !important;
+    }
+
     .project-column1 {
         display: inline-block;
         width: 45%;
@@ -497,9 +509,8 @@ footer div ul a:hover {
         width: 100%;
     }
 }
-
-
 /*Media Queries - 900px - End*/
+
 @media screen and (max-width: 600px) {
     .hero {
         background: url("../images/hello-hero.gif");
@@ -510,6 +521,10 @@ footer div ul a:hover {
         background-repeat: no-repeat;
         margin: 0 -20%;
         padding: 0;
+    }
+
+    .secondary-hero {
+        background-position-y: -25vh !important;
     }
     .about-container {
         display: block;
@@ -575,7 +590,7 @@ footer div ul a:hover {
 
     .contact-form {
         width: 90%;
-        margin: 0 auto !important;
+        margin: 10% auto !important;
     }
 
     .project-links {
@@ -622,6 +637,23 @@ footer div ul a:hover {
 /*Media Queries - 500px*/
 
 /*Media Queries - 500px - End*/
+
+/*secondary pages*/
+.secondary-page h3, .secondary-page p, .secondary-page ul{
+    padding: 10px;
+}
+
+.secondary-page ul {
+    margin: 0 5%;
+}
+
+.secondary-page a {
+    color: white;
+}
+
+.secondar-page a:hover {
+    font-weight: bold;
+}
 
 
 
