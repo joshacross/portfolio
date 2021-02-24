@@ -132,7 +132,6 @@ header nav ul li a:hover {
 
 /*Hero Styles*/
 .hero {
-    height: 75vh;
     background: url("../images/hello-hero.gif") no-repeat center center;
     background-color: white;
     background-attachment:fixed;
